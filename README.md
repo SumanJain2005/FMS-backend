@@ -1,23 +1,35 @@
 This is a backend project where we will be dealing with a flight management system, the file structure is elaborated below.
 Directory structure:
+```
+Directory structure:
 └── sumanjain2005-fms-backend/
+    ├── README.md
     ├── package.json
-    └── `src/`
+    └── src/
         ├── index.js
-        ├── `config/`
+        ├── config/
         │   ├── index.js
         │   ├── login-config.js
         │   └── server-config.js
-        ├── `controllers/`
+        ├── controllers/
         │   ├── index.js
         │   └── info-controller.js
-        ├── `routes/`
+        ├── models/
+        │   └── index.js
+        ├── repositories/
+        │   └── index.js
+        ├── routes/
         │   ├── index.js
-        │   └── `v1/`
+        │   ├── v1/
+        │   │   └── index.js
+        │   └── v2/
         │       └── index.js
-        └── `services/` 
+        ├── services/
+        │   └── index.js
+        └── utils/
             └── index.js
 
+```
 - winston : https://www.npmjs.com/package/winston?activeTab=readme
 - sequelize : https://sequelize.org/docs/v6/getting-started/
 - https-status-code : https://www.npmjs.com/package/http-status-codes
