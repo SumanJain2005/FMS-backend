@@ -60,8 +60,17 @@ Directory structure:
     "dialect": "mysql"
   }
 }
-
 ```
-- if you are setting up the config.json for sequelize cli this is simply the docs, where in the dialect you give the database you want to use.
+- To run the project use
+```
+npm i
+```
+- setup the .env from the example template, and we are good to go.
+- Use the command
+```
+ npx sequelize init 
+```
+- the above command will initialize a config folder (we had that pre built), a migrations and a seeder folder. 
+- if you are setting up the `config.json` for sequelize cli this is simply the docs, where in the dialect you give the database you want to use.
 - if you are setting up production or test environment, make sure you replace the ip or the host to the one running which can be for example an ec2 instance running live.
-
+- the purpose of `seeders` is to give some starter data for dev testing purposes.
