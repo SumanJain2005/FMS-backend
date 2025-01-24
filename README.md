@@ -74,3 +74,8 @@ npm i
 - if you are setting up the `config.json` for sequelize cli this is simply the docs, where in the dialect you give the database you want to use.
 - if you are setting up production or test environment, make sure you replace the ip or the host to the one running which can be for example an ec2 instance running live.
 - the purpose of `seeders` is to give some starter data for dev testing purposes.
+- After getting it setup we generate a model using the sequelize cli, make sure you shift to the src directory.
+```
+npx sequelize db:create
+npx sequelize model:generate --name Flight --attributes modelNumber:string,capacity:integer
+```
